@@ -1,3 +1,4 @@
+
 # Static Routing Network Topology using Mininet
 
 This project demonstrates the implementation of a custom network topology using **Mininet**, aimed at enabling inter-host communication through **static routing**. The exercise reinforces practical knowledge of IP addressing, subnetting, and routing configuration in simulated environments.
@@ -24,7 +25,7 @@ The network consists of:
   - `Link r1-r2` (10.0.0.0/30): `r1-eth1`, `r2-eth1`
   - `Link r2-r3` (10.0.1.0/30): `r2-eth2`, `r3-eth0`
 
-### IP Addressing Scheme:
+### IP Addressing Scheme
 
 | Device       | Interface   | IP Address        | Subnet         |
 |--------------|-------------|-------------------|----------------|
@@ -62,19 +63,29 @@ Ensure that you have a working Mininet environment. This project was developed a
 
 ### 2. Clone the Repository
 
-Clone the project to your local Mininet environment:
-
 ```bash
 git clone https://github.com/RennanCarneiro/mininet-topologia-redes.git
 cd mininet-topologia-redes
+```
 
 ### 3. Run the custom topology
 
 ```bash
 sudo python topologia.py
+```
 
 ### 4. Access Hosts and Routers
-To test configurations and connectivity, you can enter any host or router using the Mininet CLI
+
+To test configurations and connectivity, you can enter any host or router using the Mininet CLI:
+
+```bash
+mininet> xterm h1
+mininet> xterm r2
+```
+
+You can then run commands such as `ping`, `ifconfig`, or `route -n` to verify communication and routing tables.
+
+---
 
 ## Future Improvements
 
@@ -82,6 +93,14 @@ To test configurations and connectivity, you can enter any host or router using 
 - Include diagram generation from code
 - Improve modularization of topology file
 
+---
+
 ## Author
 
 - **Rennan Carneiro** - [@RennanCarneiro](https://github.com/RennanCarneiro)
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
