@@ -87,6 +87,14 @@ You can then run commands such as `ping`, `ifconfig`, or `route -n` to verify co
 
 ---
 
+## 📄 Report
+
+The full report containing topology description, configuration commands, and connectivity test results is available at:
+
+➡️ [relatorio/Descricao_da_topologia.pdf](relatorio/topologia.pdf)
+
+---
+
 ## Future Improvements
 
 - Add automated tests for connectivity
